@@ -40,8 +40,9 @@ function App() {
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
         </div>
-        <p className="headlines">Headlines</p>
+        <div className="headlines">Headlines...</div>
         <div className="scroll">
+          <br></br>
           <NewsList className="news" />
         </div>
 
@@ -53,10 +54,12 @@ function App() {
                 <p className="bold">{data.main.feels_like.toFixed()}°C</p>
               ) : null}
             </div>
+            <br></br>
             <div className="humidity">
               <p>Humidity</p>
               {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
             </div>
+            <br></br>
             <div className="wind">
               <p>Wind</p>
               {data.wind ? (
