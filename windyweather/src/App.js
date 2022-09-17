@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import NewsList from "./components/NewsList";
 
 function App() {
   const [data, setData] = useState({});
@@ -32,13 +33,16 @@ function App() {
           <div className="location">
             <p>{data.name}</p>
           </div>
-          <div className="temp">
-            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
-          </div>
-
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
+          <div className="temp">
+            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
+          </div>
+        </div>
+        <p className="headlines">Headlines</p>
+        <div className="scroll">
+          <NewsList className="news" />
         </div>
 
         {data.name !== undefined && (
