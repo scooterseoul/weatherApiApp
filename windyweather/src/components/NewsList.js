@@ -22,7 +22,7 @@ const NewsList = () => {
       {articles.map((article) => {
         return (
           <NewsItem
-            key={article.id}
+            key={article.title}
             title={article.title}
             description={article.description}
             url={article.url}

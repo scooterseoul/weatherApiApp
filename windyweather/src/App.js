@@ -31,7 +31,7 @@ function App() {
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>{data.name}</p>
+            <p className="place">{data.name}</p>
           </div>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
