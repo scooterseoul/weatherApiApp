@@ -2,6 +2,7 @@
   width: 70vw;
   align-self: center;
   border-radius: 0.7rem;
+  margin-top: 1rem;
 }
 
 a {
@@ -17,7 +18,8 @@ a {
 }
 @media only screen and (min-width: 48rem) {
   .news-img {
-    width: 50vw;
+    width: 35vw;
+    height: auto;
     align-self: center;
     border-radius: 0.7rem;
   }
