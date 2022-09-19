@@ -39,9 +39,7 @@ You may also see any lint errors in the console.
    Get a free news API Key at [https://newsapi.org](https://newsapi.org)
 2. Clone the repo
    ```sh
-   git clone https://github.com/scooterseoul
-/
-studious-octo-carnival.git
+   git clone https://github.com/scooterseoul/studious-octo-carnival.git
    ```
 3. Install NPM packages
    ```sh
