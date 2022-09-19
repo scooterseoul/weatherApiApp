@@ -39,9 +39,14 @@ function App() {
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
+          <div className="minmaxtemp">
+            {data.main ? <h3>Min: {data.main.temp_min.toFixed()}°C</h3> : null}
+            {data.main ? <h3>Max: {data.main.temp_max.toFixed()}°C</h3> : null}
+          </div>
         </div>
-        <p className="headlines">Headlines</p>
+        <div className="headlines">News and Weather...</div>
         <div className="scroll">
+          <br></br>
           <NewsList className="news" />
         </div>
 
@@ -53,12 +58,14 @@ function App() {
                 <p className="bold">{data.main.feels_like.toFixed()}°C</p>
               ) : null}
             </div>
+            <br></br>
             <div className="humidity">
-              <p>Humidity</p>
+              <p>Humidity &#128167;</p>
               {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
             </div>
+            <br></br>
             <div className="wind">
-              <p>Wind</p>
+              <p>Wind &#128168;</p>
               {data.wind ? (
                 <p className="bold">{data.wind.speed.toFixed()}km/h</p>
               ) : null}
